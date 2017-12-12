@@ -14,7 +14,7 @@ Template.body.onCreated(function bodyOnCreated() {
 });
 
 Template.body.helpers({
- tasks() {
+ tasks() {  
     const instance = Template.instance();
     if (instance.state.get('hideCompleted')) {
       // If hide completed is checked, filter tasks
